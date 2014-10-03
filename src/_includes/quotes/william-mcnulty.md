@@ -1,0 +1,1 @@
+The minds behind UpRaise have helped Team Rubicon raise over $3M online since our inception in 2010.

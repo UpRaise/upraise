@@ -1,0 +1,3 @@
+Matt is the Chief Visionary Officer of UpRaise Consulting, where he steers the future of company and oversees strategic partnerships and brand development. He also serves as the Chief Disruption Officer, where he helps clients reimagine how they interact with their supporters and manage their fundraising online.
+
+Matt studied business management at Loyola Marymount University.  He has a background in marketing and experience implementing large-scale technology solutions. He joined Team Rubicon to help develop a scalable online fundraising and donor engagement program. He’s often featured on StayClassy’s blog for his approach to redefining what it means to engage donors. When not glued to his mobile device, he can be found exploring Portland’s culinary scene.

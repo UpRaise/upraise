@@ -1,0 +1,3 @@
+In her role as Director of Operations at UpRaise Consulting, Jenna oversees the company’s business operations, including financial planning, billing & managing the use of materials. She also serves as the Adult Supervision Officer, ensuring that responsible decisions are made.
+
+Jenna’s commitment to social justice was formed as an undergraduate at Loyola Marymount University. After college, she went on to serve in the Jesuit Volunteer Corps. Jenna has also worked in student support services at De La Salle North Catholic High School and Clark College. When not working, you may find her practicing yoga or enjoying a good meal with friends.

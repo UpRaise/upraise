@@ -1,0 +1,1 @@
+Upraise helped us engage fundraisers and donors in creative and compelling ways that led to a 30% increase in our event fundraising. They are savvy, enthusiastic, and realistic in their approach.  And, they are a blast to work with, which is of utmost importance in outdoor adventure events!
