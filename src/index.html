@@ -2,153 +2,163 @@
 layout: default
 title: Upraise Consulting
 ---
-
-<div class="hero">
-  <p>We leverage the intersection of technology and human behavior to help nonprofits raise awareness and money online.</p>
-</div>
-
-<div class="what-we-do">
-  <h1>What We Do</h1>
-  <ul>
-    {% for capability in site.data.capabilities %}
-      <li>{{ capability.name }}</li>
-    {% endfor %}
-  </ul>
-  <a href="#">Find Out How We Can Help You</a>
-</div>
-
-<div class="quotes">
-  {% for quote in site.data.quotes %}
-    {% capture contentpath %}quotes/{{ quote.id }}.md{% endcapture %}
-    {% capture content %}{% include {{contentpath}} %}{% endcapture %}
-
-    <div class="quote">
-      <div class="quote__content">{{ content | markdownify }}</div>
-      <div class="quote__attribution">
-        <div class="quote__image"><img src="/img/quotes/{{ quote.id }}.jpg" alt="{{ quote.name }}"></div>
-        <div class="quote__person">
-          <div class="quote__name">{{ quote.name }}</div>
-          <div class="quote__title">{{ quote.title }}</div>
-          <div class="quote__organization">{{ quote.org }}</div>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-<div class="events">
-  <h1>Speaking Engagements</h1>
-  {% for event in site.data.events %}
-    <div class="event">
-      <a href="{{ event.url }}" class="event__link">
-        <div class="event__logo"><img src="/img/events/{{ event.id }}.png" alt="{{ event.name }}"></div>
-        <div class="event__date">{{ event.date }}</div>
-      </a>
-    </div>
-  {% endfor %}
-</div>
-
-<div class="links">
-  <h1>Featured Blog Posts</h1>
-  {% for link in site.data.links %}
-    <div class="link">
-      <div class="link__bullet"><div class="u-icon">{% include svg/icon-bullet.svg %}</div></div>
-      <div class="link__date">{{ link.date }}</div>
-      <div class="link__url"><a href="{{ link.url }}">{{ link.name }}</a></div>
-    </div>
-  {% endfor %}
-</div>
-
-<div class="webinars">
-  <div class="webinars__icon">
-    <div class="u-icon">{% include svg/icon-globe.svg %}</div>
+<div class="lo-block lo-block--hero js-fill-viewport">
+  <div class="hero">
+    <p>We leverage the intersection of technology and human behavior to help nonprofits raise awareness and money online.</p>
   </div>
-  <h1>Upcoming Webinar</h1>
-  {% for webinar in site.data.webinars %}
-    <div class="webinar">
-      <div class="webinar__content">Join Our Upcoming Webinar “{{ webinar.name }}” on {{ webinar.date }} at {{ webinar.time }}.</div>
-      <div class="webinar__action">
-        <a href="{{ webinar.url }}" class="button">Sign Up Now</a>
-      </div>
-    </div>
-  {% endfor %}
 </div>
-
-<div class="founders">
-  <h1>Leadership</h1>
-  {% for founder in site.data.founders %}
-    {% capture biopath %}founders/{{ founder.id }}.md{% endcapture %}
-    {% capture bio %}{% include {{biopath}} %}{% endcapture %}
-    <div class="founder">
-      <div class="founder__headhot"><img src="/img/founders/{{ founder.id }}.jpg" alt=""></div>
-      <div class="founder__name">{{ founder.name }}</div>
-      <div class="founder__title">{{ founder.title }}</div>
-      <div class="founder__bio">{{ bio | markdownify }}</div>
+<div class="lo-block">
+  <div class="capabilities">
+    <h1>What We Do</h1>
+    <ul class="capabilities__list">
+      {% for capability in site.data.capabilities %}
+        <li class="capability">{{ capability.name }}</li>
+      {% endfor %}
+    </ul>
+    <div class="capabilities__action">
+      <a href="#" class="button button--green">Find Out How We Can Help You</a>
     </div>
-  {% endfor %}
+  </div>
 </div>
+<div class="lo-block lo-block--quotes js-fill-viewport">
+  <div class="quotes">
+    {% for quote in site.data.quotes %}
+      {% capture contentpath %}quotes/{{ quote.id }}.md{% endcapture %}
+      {% capture content %}{% include {{contentpath}} %}{% endcapture %}
 
-<div class="contact">
-  <h1>Contact UpRaise</h1>
-  <form action="//forms.brace.io/you@email.com" class"form">
-    <div class="form__split-inputs">
-      <!-- NAME -->
-      <div class="form__group">
-        <label for="name">Name</label>
-        <div class="form__input-with-icon">
-          <div class="u-icon">{% include svg/icon-name.svg %}</div>
-          <input type="text" name="name" placeholder="Your Name">
+      <div class="quote">
+        <div class="quote__content">{{ content | markdownify }}</div>
+        <div class="quote__attribution">
+          <div class="quote__image"><img src="/img/quotes/{{ quote.id }}.jpg" alt="{{ quote.name }}"></div>
+          <div class="quote__person">
+            <div class="quote__name">{{ quote.name }}</div>
+            <div class="quote__title">{{ quote.title }}</div>
+            <div class="quote__organization">{{ quote.org }}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="lo-block">
+  <div class="events">
+    <h1>Speaking Engagements</h1>
+    {% for event in site.data.events %}
+      <div class="event">
+        <a href="{{ event.url }}" class="event__link">
+          <div class="event__logo"><img src="/img/events/{{ event.id }}.png" alt="{{ event.name }}"></div>
+          <div class="event__date">{{ event.date }}</div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="lo-block">
+  <div class="links">
+    <h1>Featured Blog Posts</h1>
+    {% for link in site.data.links %}
+      <div class="link">
+        <div class="link__bullet"><div class="u-icon">{% include svg/icon-bullet.svg %}</div></div>
+        <div class="link__date">{{ link.date }}</div>
+        <div class="link__url"><a href="{{ link.url }}">{{ link.name }}</a></div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="lo-block lo-block--webinars">
+  <div class="webinars">
+    <div class="webinars__icon">
+      <div class="u-icon">{% include svg/icon-globe.svg %}</div>
+    </div>
+    <h1>Upcoming Webinar</h1>
+    {% for webinar in site.data.webinars %}
+      <div class="webinar">
+        <div class="webinar__content">Join Our Upcoming Webinar “{{ webinar.name }}” on {{ webinar.date }} at {{ webinar.time }}.</div>
+        <div class="webinar__action">
+          <a href="{{ webinar.url }}" class="button">Sign Up Now</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="lo-block">
+  <div class="founders">
+    <h1>Leadership</h1>
+    {% for founder in site.data.founders %}
+      {% capture biopath %}founders/{{ founder.id }}.md{% endcapture %}
+      {% capture bio %}{% include {{biopath}} %}{% endcapture %}
+      <div class="founder">
+        <div class="founder__headhot"><img src="/img/founders/{{ founder.id }}.jpg" alt=""></div>
+        <div class="founder__name">{{ founder.name }}</div>
+        <div class="founder__title">{{ founder.title }}</div>
+        <div class="founder__bio">{{ bio | markdownify }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="lo-block lo-block--contact">
+  <div class="contact">
+    <h1>Contact UpRaise</h1>
+    <form action="//forms.brace.io/you@email.com" class"form">
+      <div class="form__split-inputs">
+        <!-- NAME -->
+        <div class="form__group">
+          <label for="name">Name</label>
+          <div class="form__input-with-icon">
+            <div class="u-icon">{% include svg/icon-name.svg %}</div>
+            <input type="text" name="name" placeholder="Your Name">
+          </div>
+        </div>
+
+        <!-- ORGANIZATION -->
+        <div class="form__group">
+          <label for="organization">Organization</label>
+          <div class="form__input-with-icon">
+            <div class="u-icon">{% include svg/icon-org.svg %}</div>
+            <input type="text" name="organization" placeholder="Your Organization">
+          </div>
         </div>
       </div>
 
-      <!-- ORGANIZATION -->
-      <div class="form__group">
-        <label for="organization">Organization</label>
-        <div class="form__input-with-icon">
-          <div class="u-icon">{% include svg/icon-org.svg %}</div>
-          <input type="text" name="organization" placeholder="Your Organization">
+      <div class="form__split-inputs">
+        <!-- EMAIL -->
+        <div class="form__group">
+          <label for="_replyto">Email</label>
+          <div class="form__input-with-icon">
+            <div class="u-icon">{% include svg/icon-email.svg %}</div>
+            <input type="email" name="_replyto" placeholder="Your Email">
+          </div>
+        </div>
+
+        <!-- PHONE -->
+        <div class="form__group">
+          <label for="phone">Telephone</label>
+          <div class="form__input-with-icon">
+            <div class="u-icon">{% include svg/icon-phone.svg %}</div>
+            <input type="email" name="phone" placeholder="Mobile or Landline">
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="form__split-inputs">
-      <!-- EMAIL -->
+      <!-- CONTENT -->
       <div class="form__group">
-        <label for="_replyto">Email</label>
+        <label for="content">What do you need elevated?</label>
+        <textarea name="content" placeholder="Raise awareness, raise money, combo?"></textarea>
+      </div>
+
+      <!-- TWITTER -->
+      <div class="form__group">
+        <label for="twitter">Twitter</label>
         <div class="form__input-with-icon">
-          <div class="u-icon">{% include svg/icon-email.svg %}</div>
-          <input type="email" name="_replyto" placeholder="Your Email">
+          <div class="u-icon">{% include svg/icon-twitter.svg %}</div>
+          <input type="text" name="twitter" placeholder="Your @Username">
         </div>
       </div>
 
-      <!-- PHONE -->
-      <div class="form__group">
-        <label for="phone">Telephone</label>
-        <div class="form__input-with-icon">
-          <div class="u-icon">{% include svg/icon-phone.svg %}</div>
-          <input type="email" name="phone" placeholder="Mobile or Landline">
-        </div>
+      <!-- SUBMIT -->
+      <div class="form__submit">
+        <input type="submit" value="Contact Us">
       </div>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="form__group">
-      <label for="content">What do you need elevated?</label>
-      <textarea name="content" placeholder="Raise awareness, raise money, combo?"></textarea>
-    </div>
-
-    <!-- TWITTER -->
-    <div class="form__group">
-      <label for="twitter">Twitter</label>
-      <div class="form__input-with-icon">
-        <div class="u-icon">{% include svg/icon-twitter.svg %}</div>
-        <input type="text" name="twitter" placeholder="Your @Username">
-      </div>
-    </div>
-
-    <!-- SUBMIT -->
-    <div class="form__submit">
-      <input type="submit" value="Contact Us">
-    </div>
-  </form>
+    </form>
+  </div>
 </div>

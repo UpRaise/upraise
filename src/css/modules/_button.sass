@@ -1,0 +1,32 @@
+.button,
+a.button,
+button.button
+  // reset
+  display: inline-block
+  background: none
+  margin: 0
+  padding: 0
+
+  // base styles
+  border: 1px solid $gray
+  padding: 0.5em 1em
+  border-radius: .25em
+  color: $gray
+  transition: all 0.2s ease-in-out
+
+  &:hover
+    background: lighten($gray, 35%)
+
+  &--green
+    border-color: $green
+    color: $green
+
+    &:hover
+      background: lighten($green, 50%)
+
+  &--blue
+    border-color: $blue
+    color: $blue
+
+    &:hover
+      background: lighten($blue, 50%)

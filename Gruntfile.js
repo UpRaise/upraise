@@ -111,7 +111,6 @@ module.exports = function(grunt) {
       dev: {
         options: {
             style: 'compact',
-            require: 'susy'
         },
         files: {
             './src/css/styles.css': './src/css/styles.sass'
@@ -120,7 +119,6 @@ module.exports = function(grunt) {
       prod: {
         options: {
             style: 'compressed',
-            require: 'susy'
         },
         files: {
             './src/css/styles.css': './src/css/styles.sass'
