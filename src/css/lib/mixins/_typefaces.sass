@@ -1,0 +1,12 @@
+// Weight: normal, bold
+// Style: normal, italic, oblique
+
+@mixin lato($style:normal,$weight:300)
+  font-family: 'Lato', sans-serif
+  font-style: $style
+  font-weight: 300
+
+  @if $weight == "normal"
+    font-weight: 300
+  @else if $weight == "bold"
+    font-weight: 700

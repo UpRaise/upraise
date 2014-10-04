@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+html
+  font-size: rem(16)
+
+  +bp(rem(450))
+    font-size: rem(18)
+
+  +bp(rem(600))
+    font-size: rem(22)
+
+html,
+body
+  background-color: $background-color
+  +lato
+  color: $type-color
+
+img,
+canvas,
+iframe,
+video,
+svg
+  max-width: 100%
+  display: block
+
+a,
+a:link,
+a:active,
+a:visited
+  color: $link-color
+  text-decoration: none
+
+a:hover
+  color: $link-hover-color
+
+ul, ul li
+  margin: 0
+  padding: 0
+  list-style: none
+
+h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr
+  margin-top: 0
+  margin-bottom: $global-margin
+
+
+h1, h2, h3
+  +lato
+  color: $dark-blue
+
+h1
+  font-size: 2em
+
+h2
+  font-size: 1.5em
+
+h3
+
+  font-size: 1.25em
+
+h4, h5, h6
+  font-size: 1em
+
+em, i
+  +lato("italics")
+  color: $dark-blue
+
+strong, b
+  +lato("normal", "bold")
+  color: $dark-blue
+
+
+[ng-click]
+  cursor: pointer
+
+svg
+  width: 100%
+  height: 100%
+
+
+.red
+  color: $red

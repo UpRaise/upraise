@@ -19,4 +19,5 @@ CVS
 .sass-cache/
 node_modules/
 build/
-
+src/css/styles.css
+src/css/styles.css.map
