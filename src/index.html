@@ -10,10 +10,10 @@ title: Upraise Consulting
       </div>
       <div class="header__nav">
         <ul class="nav">
-          <li class="nav__link nav__link--capabilities"><a href="#">What We Do</a></li>
-          <li class="nav__link nav__link--events"><a href="#">Latest Work</a></li>
-          <li class="nav__link nav__link--founders"><a href="#">Leadership</a></li>
-          <li class="nav__link nav__link--contact"><a href="#">Contact Us</a></li>
+          <li class="nav__link nav__link--capabilities"><a href="#what-we-do">What We Do</a></li>
+          <li class="nav__link nav__link--events"><a href="#latest-work">Latest Work</a></li>
+          <li class="nav__link nav__link--founders"><a href="#leadership">Leadership</a></li>
+          <li class="nav__link nav__link--contact"><a href="#contact-us">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -24,7 +24,7 @@ title: Upraise Consulting
     </div>
   </div>
 </div>
-<div class="lo-block">
+<div class="lo-block" id="what-we-do">
   <h1>What We Do</h1>
   <div class="capabilities">
     <ul class="capabilities__list">
@@ -33,7 +33,7 @@ title: Upraise Consulting
       {% endfor %}
     </ul>
     <div class="capabilities__action">
-      <a href="#" class="button button--green">Find Out How We Can Help You</a>
+      <a href="#contact-us" class="button button--green">Find Out How We Can Help You</a>
     </div>
   </div>
 </div>
@@ -57,7 +57,7 @@ title: Upraise Consulting
     {% endfor %}
   </div>
 </div>
-<div class="lo-block">
+<div class="lo-block" id="latest-work">
   <h1>Speaking Engagements</h1>
   <div class="events">
     {% for event in site.data.events %}
@@ -98,7 +98,7 @@ title: Upraise Consulting
     {% endfor %}
   </div>
 </div>
-<div class="lo-block">
+<div class="lo-block" id="leadership">
   <h1>Leadership</h1>
   <div class="founders">
     {% for founder in site.data.founders %}
@@ -113,7 +113,7 @@ title: Upraise Consulting
     {% endfor %}
   </div>
 </div>
-<div class="lo-block lo-block--contact">
+<div class="lo-block lo-block--contact" id="contact-us">
   <div class="contact">
     <h1>Contact UpRaise</h1>
     <div class="form">
