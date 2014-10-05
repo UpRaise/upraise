@@ -1,0 +1,39 @@
+.events
+  +center(40em)
+  text-align: center
+
+  display: flex
+  flex-flow: row wrap
+
+.event
+  border: 1px solid $border-color
+  width: 47.5%
+  margin-right: 5%
+  margin-bottom: 2em
+  border-radius: 0.25em
+
+  &:nth-child(even)
+    margin-right: 0
+
+.event__link
+  display: flex
+  flex-direction: column
+  height: 100%
+  transition: background 0.2s ease-in-out
+
+  &:hover
+    background: lighten($blue, 50%)
+
+.event__logo
+  display: flex
+  flex-grow: 1
+  padding: 1rem 1rem 0
+
+  img
+    margin: auto
+
+.event__date
+  font-size: 0.75em
+  color: $blue
+  text-transform: uppercase
+  padding: 1rem
