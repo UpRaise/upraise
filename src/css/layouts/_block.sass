@@ -1,21 +1,30 @@
 .lo-block
   width: 100%
   margin-bottom: 4em
+  padding: 0 1.5em
+
+  &--hero,
+  &--quotes
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2em 1.5em
+    background-size: cover
+    color: $white
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9)
 
   &--hero
     background: url(/img/backgrounds/hero.jpg) no-repeat center center fixed
-    background-size: cover
-    color: $white
 
   &--quotes
     background: url(/img/backgrounds/quotes.jpg) no-repeat center center fixed
-    background-size: cover
-    color: $white
 
   &--webinars
+    padding: 2em 1.5em
     background: $blue
     color: $white
 
   &--contact
+    padding: 2em 1.5em
     background: $green
     color: $white
