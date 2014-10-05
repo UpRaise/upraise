@@ -80,7 +80,7 @@ module.exports = function(grunt) {
       prod: {
         options: {
           branch: 'gh-pages',
-          url: 'https://github.com/floatingboxes/fb-resources.git'
+          url: 'https://github.com/UpRaise/upraise.git'
         },
         src: './build/prod'
       },
@@ -167,9 +167,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-git-deploy');
   grunt.loadNpmTasks('grunt-jekyll');
 
   grunt.registerTask('dev', ['clean:dev', 'sass:dev', 'autoprefixer', 'jekyll:dev', 'concurrent:dev']);
-  grunt.registerTask('prod', ['clean:prod', 'sass:prod', 'autoprefixer', 'jekyll:prod', 'uglify:prod']);
+  grunt.registerTask('prod', ['clean:prod', 'sass:prod', 'autoprefixer', 'jekyll:prod', 'git_deploy:prod']);
 
 };
