@@ -82,13 +82,13 @@ title: Upraise Consulting
   </div>
 </div>
 <div class="lo-block">
+  <h1>Leadership</h1>
   <div class="founders">
-    <h1>Leadership</h1>
     {% for founder in site.data.founders %}
       {% capture biopath %}founders/{{ founder.id }}.md{% endcapture %}
       {% capture bio %}{% include {{biopath}} %}{% endcapture %}
       <div class="founder">
-        <div class="founder__headhot"><img src="/img/founders/{{ founder.id }}.jpg" alt=""></div>
+        <div class="founder__headshot"><img src="/img/founders/{{ founder.id }}.jpg" alt=""></div>
         <div class="founder__name">{{ founder.name }}</div>
         <div class="founder__title">{{ founder.title }}</div>
         <div class="founder__bio">{{ bio | markdownify }}</div>
