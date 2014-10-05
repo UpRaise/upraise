@@ -99,66 +99,68 @@ title: Upraise Consulting
 <div class="lo-block lo-block--contact">
   <div class="contact">
     <h1>Contact UpRaise</h1>
-    <form action="//forms.brace.io/you@email.com" class"form">
-      <div class="form__split-inputs">
-        <!-- NAME -->
-        <div class="form__group">
-          <label for="name">Name</label>
-          <div class="form__input-with-icon">
-            <div class="u-icon">{% include svg/icon-name.svg %}</div>
-            <input type="text" name="name" placeholder="Your Name">
+    <div class="form">
+      <form action="//forms.brace.io/you@email.com">
+        <div class="form__split-inputs">
+          <!-- NAME -->
+          <div class="form__group">
+            <label for="name">Name</label>
+            <div class="form__input-with-icon">
+              <div class="form__input-icon"><div class="u-icon">{% include svg/icon-name.svg %}</div></div>
+              <input type="text" name="name" placeholder="Your Name">
+            </div>
+          </div>
+
+          <!-- ORGANIZATION -->
+          <div class="form__group">
+            <label for="organization">Organization</label>
+            <div class="form__input-with-icon">
+              <div class="form__input-icon"><div class="u-icon">{% include svg/icon-org.svg %}</div></div>
+              <input type="text" name="organization" placeholder="Your Organization">
+            </div>
           </div>
         </div>
 
-        <!-- ORGANIZATION -->
-        <div class="form__group">
-          <label for="organization">Organization</label>
-          <div class="form__input-with-icon">
-            <div class="u-icon">{% include svg/icon-org.svg %}</div>
-            <input type="text" name="organization" placeholder="Your Organization">
+        <div class="form__split-inputs">
+          <!-- EMAIL -->
+          <div class="form__group">
+            <label for="_replyto">Email</label>
+            <div class="form__input-with-icon">
+              <div class="form__input-icon"><div class="u-icon">{% include svg/icon-email.svg %}</div></div>
+              <input type="email" name="_replyto" placeholder="Your Email">
+            </div>
+          </div>
+
+          <!-- PHONE -->
+          <div class="form__group">
+            <label for="phone">Telephone</label>
+            <div class="form__input-with-icon">
+              <div class="form__input-icon"><div class="u-icon">{% include svg/icon-phone.svg %}</div></div>
+              <input type="email" name="phone" placeholder="Mobile or Landline">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="form__split-inputs">
-        <!-- EMAIL -->
+        <!-- CONTENT -->
         <div class="form__group">
-          <label for="_replyto">Email</label>
+          <label for="content">What do you need elevated?</label>
+          <textarea name="content" placeholder="Raise awareness, raise money, combo?"></textarea>
+        </div>
+
+        <!-- TWITTER -->
+        <div class="form__group">
+          <label for="twitter">Twitter</label>
           <div class="form__input-with-icon">
-            <div class="u-icon">{% include svg/icon-email.svg %}</div>
-            <input type="email" name="_replyto" placeholder="Your Email">
+            <div class="form__input-icon"><div class="u-icon">{% include svg/icon-twitter.svg %}</div></div>
+            <input type="text" name="twitter" placeholder="Your @Username">
           </div>
         </div>
 
-        <!-- PHONE -->
-        <div class="form__group">
-          <label for="phone">Telephone</label>
-          <div class="form__input-with-icon">
-            <div class="u-icon">{% include svg/icon-phone.svg %}</div>
-            <input type="email" name="phone" placeholder="Mobile or Landline">
-          </div>
+        <!-- SUBMIT -->
+        <div class="form__submit">
+          <input type="submit" value="Contact Us" class="button button--reverse">
         </div>
-      </div>
-
-      <!-- CONTENT -->
-      <div class="form__group">
-        <label for="content">What do you need elevated?</label>
-        <textarea name="content" placeholder="Raise awareness, raise money, combo?"></textarea>
-      </div>
-
-      <!-- TWITTER -->
-      <div class="form__group">
-        <label for="twitter">Twitter</label>
-        <div class="form__input-with-icon">
-          <div class="u-icon">{% include svg/icon-twitter.svg %}</div>
-          <input type="text" name="twitter" placeholder="Your @Username">
-        </div>
-      </div>
-
-      <!-- SUBMIT -->
-      <div class="form__submit">
-        <input type="submit" value="Contact Us">
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
