@@ -108,7 +108,8 @@ title: Upraise Consulting
         <div class="founder__headshot"><img src="/img/founders/{{ founder.id }}.jpg" alt=""></div>
         <div class="founder__name">{{ founder.name }}</div>
         <div class="founder__title">{{ founder.title }}</div>
-        <div class="founder__bio">{{ bio | markdownify }}</div>
+        <div class="founder__bio">{{ bio | truncatewords: 30 }}</div>
+        <div class="founder__action"><a href="/bios/{{ founder.id }}.html" class="js-bio-popup button button--green">Find Out More</a></div>
       </div>
     {% endfor %}
   </div>

@@ -8,8 +8,10 @@
   color: $gray
 
 .capability
-  +col(1/2, $cycle: 2)
   margin-bottom: 1em
+
+  +bp(650px)
+    +col(1/2, $cycle: 2)
 
   &:last-child
 
