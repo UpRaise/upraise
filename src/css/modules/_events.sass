@@ -2,13 +2,9 @@
   +center(40em)
   text-align: center
 
-  display: flex
-  flex-flow: row wrap
-
 .event
+  +col(1/2, $cycle: 2)
   border: 1px solid $border-color
-  width: 47.5%
-  margin-right: 5%
   margin-bottom: 2em
   border-radius: 0.25em
 
@@ -16,21 +12,17 @@
     margin-right: 0
 
 .event__link
-  display: flex
-  flex-direction: column
-  height: 100%
+  display: block
   transition: background 0.2s ease-in-out
 
   &:hover
     background: lighten($blue, 50%)
 
 .event__logo
-  display: flex
-  align-items: center
-  flex-grow: 1
   padding: 1rem 1rem 0
 
   div
+    display: inline-block
     margin: auto
 
 .event__date
