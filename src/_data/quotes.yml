@@ -1,5 +1,15 @@
 # Required: id, name, title, org
 
+- id: william-mcnulty
+  name: William McNulty
+  title: Cofounder and Managing Director, TR Global
+  org: Team Rubicon
+
+- id: scot-chisolm
+  name: Scot Chisolm
+  title: CEO & Cofounder
+  org: Classy.org
+
 - id: tonia-farman
   name: Tonia Farman
   title: Founder and Director
@@ -10,12 +20,4 @@
   title: CEO
   org: roundCorner
 
-- id: scot-chisolm
-  name: Scot Chisolm
-  title: CEO & Cofounder
-  org: Classy.org
 
-- id: william-mcnulty
-  name: William McNulty
-  title: Cofounder and Managing Director, TR Global
-  org: Team Rubicon

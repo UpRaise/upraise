@@ -37,9 +37,9 @@ title: Upraise Consulting
     </div>
   </div>
 </div>
-<div class="lo-block lo-block--quotes js-fill-viewport">
+<div class="lo-block lo-block--quotes">
   <div class="quotes">
-    <div class="quotes__container">
+    <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-pager=".pager" data-cycle-auto-height="3">
     {% for quote in site.data.quotes %}
       {% capture contentpath %}quotes/{{ quote.id }}.md{% endcapture %}
       {% capture content %}{% include {{contentpath}} %}{% endcapture %}
@@ -58,6 +58,7 @@ title: Upraise Consulting
     {% endfor %}
     </div>
   </div>
+  <div class="pager"></div>
 </div>
 <div class="lo-block" id="latest-work">
   <h1>Speaking Engagements</h1>
