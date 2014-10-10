@@ -4,6 +4,7 @@
   left: 0
   right: 0
   bottom: 0
+  padding: 1em
 
   display: flex
   align-items: center
@@ -13,6 +14,7 @@
   background-size: cover
 
   text-align: center
+  color: $white
 
 .thanks__logo
   max-width: em(200)
@@ -20,7 +22,17 @@
   margin-bottom: 4em
 
 .thanks__message
-  font-size: 4em
-  color: $white
+  font-size: 3em
   +lato("normal", "thin")
-  margin-bottom: 1em
+  margin-bottom: 0.5em
+
+.thanks__sub-message
+  margin-bottom: 4em
+
+  a,
+  a:link,
+  a:active,
+  a:hover,
+  a:visited
+    color: $white
+    text-decoration: underline
