@@ -19,12 +19,21 @@ input[type="submit"].button
   &:hover
     background: lighten($gray, 35%)
 
+  > .u-icon
+    display: inline-block
+    vertical-align: center
+    margin-right: 0.5em
+
   &--green
     border-color: $green
     color: $green
 
     &:hover
       background: lighten($green, 50%)
+
+    > .u-icon
+      fill: $green
+
 
   &--blue
     border-color: $blue
@@ -33,6 +42,9 @@ input[type="submit"].button
     &:hover
       background: lighten($blue, 50%)
 
+    > .u-icon
+      fill: $blue
+
   &--reverse
     border-color: $white
     color: $white
@@ -40,3 +52,6 @@ input[type="submit"].button
 
     &:hover
       background: rgba(255,255,255,0.3)
+
+    > .u-icon
+      fill: $white
