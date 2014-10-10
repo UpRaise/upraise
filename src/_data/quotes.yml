@@ -5,15 +5,15 @@
   title: Cofounder and Managing Director, TR Global
   org: Team Rubicon
 
-- id: scot-chisolm
-  name: Scot Chisolm
-  title: CEO & Cofounder
-  org: Classy.org
-
 - id: tonia-farman
   name: Tonia Farman
   title: Founder and Director
   org: Athletes4Cancer
+
+- id: scot-chisolm
+  name: Scot Chisolm
+  title: CEO & Cofounder
+  org: Classy.org
 
 - id: dan-lammot
   name: Dan Lammot

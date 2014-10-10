@@ -2,18 +2,21 @@
   text-align: center
   overflow: hidden
   width: 100%
+  margin-top: 2em
 
 .pager span
-  font-family: arial
-  font-size: 50px
-  width: 16px
-  height: 16px
   display: inline-block
-  color: #ddd
+  width: 0.75em
+  height: 0.75em
+  border-radius: 0.375em
+  background: none
   cursor: pointer
+  margin-right: 0.25em
+  border: 2px solid $gray
 
 .pager span.cycle-pager-active
-  color: $green
+  background: $green
+  border: 2px solid $green
 
 .pager > *
   cursor: pointer
