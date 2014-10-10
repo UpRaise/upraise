@@ -1,13 +1,32 @@
 .quotes
   position: relative
 
+.quotes__container
+  position: relative
+  width: 100%
 
 .quote
-  display: none // temporary, until javascript
+  position: absolute
+  top: 0
+  animation-duration: 40s
+  animation-name: carousel
+  animation-iteration-count: infinite
+  opacity: 0
 
   &:first-child
-    display: block // temporary, until javascript
+    position: static
 
+  &--tonia-farman
+    // no delay
+
+  &--dan-lammot
+    animation-delay: 10s
+
+  &--scot-chisolm
+    animation-delay: 20s
+
+  &--william-mcnulty
+    animation-delay: 30s
 
 .quote__content
   +center(40em)
@@ -35,3 +54,11 @@
 .quote__organization
   font-size: 0.75em
   color: lighten($gray, 15%)
+
+@keyframes carousel
+  0%
+    opacity: 0
+  2%, 23%
+    opacity: 1
+  25%, 100%
+    opacity: 0

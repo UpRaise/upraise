@@ -39,11 +39,12 @@ title: Upraise Consulting
 </div>
 <div class="lo-block lo-block--quotes js-fill-viewport">
   <div class="quotes">
+    <div class="quotes__container">
     {% for quote in site.data.quotes %}
       {% capture contentpath %}quotes/{{ quote.id }}.md{% endcapture %}
       {% capture content %}{% include {{contentpath}} %}{% endcapture %}
 
-      <div class="quote">
+      <div class="quote quote--{{ quote.id }}">
         <div class="quote__content">{{ content | markdownify }}</div>
         <div class="quote__attribution">
           <div class="quote__image"><img src="/img/quotes/{{ quote.id }}.jpg" alt="{{ quote.name }}"></div>
@@ -55,6 +56,7 @@ title: Upraise Consulting
         </div>
       </div>
     {% endfor %}
+    </div>
   </div>
 </div>
 <div class="lo-block" id="latest-work">
