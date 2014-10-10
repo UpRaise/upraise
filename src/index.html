@@ -39,7 +39,12 @@ title: Upraise Consulting
 </div>
 <div class="lo-block lo-block--quotes">
   <div class="quotes">
-    <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-pager=".pager" data-cycle-auto-height="3">
+    <div class="cycle-slideshow"
+      data-cycle-slides="> div"
+      data-cycle-pager=".pager"
+      data-cycle-auto-height="3"
+      data-cycle-timeout=20000
+      data-cycle-pause-on-hover="true">
     {% for quote in site.data.quotes %}
       {% capture contentpath %}quotes/{{ quote.id }}.md{% endcapture %}
       {% capture content %}{% include {{contentpath}} %}{% endcapture %}
