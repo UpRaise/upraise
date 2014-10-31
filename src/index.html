@@ -68,14 +68,19 @@ title: Upraise Consulting
 <div class="lo-block" id="latest-work">
   <h1>Speaking Engagements</h1>
   <div class="events">
-    {% for event in site.data.events %}
+    {% raw %}
+    <script src="https://data.brace.io/ss/qnFX7xbpdFBQP6RUKkPJXS.js"></script>
+    <script type="x-brace-template">
+      {{#rows}}
       <div class="event">
-        <a href="{{ event.url }}" class="event__link">
-          <div class="event__logo"><div><img src="/img/events/{{ event.id }}.png" alt="{{ event.name }}"></div></div>
-          <div class="event__date">{{ event.date }}</div>
+        <a href="{{url}}" class="event__link">
+          <div class="event__logo"><div><img src="http://googledrive.com/host/0B8q2MFMBD9mFNmtMWHV5VFdnTEU/{{id}}.png" alt="{{name}}"></div></div>
+          <div class="event__date">{{date}}</div>
         </a>
       </div>
-    {% endfor %}
+      {{/rows}}
+    </script>
+    {% endraw %}
   </div>
 </div>
 <div class="lo-block">
