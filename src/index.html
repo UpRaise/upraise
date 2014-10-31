@@ -67,32 +67,12 @@ title: Upraise Consulting
 </div>
 <div class="lo-block" id="latest-work">
   <h1>Speaking Engagements</h1>
-  <div class="events">
-    {% raw %}
-    <script src="https://data.brace.io/ss/qnFX7xbpdFBQP6RUKkPJXS.js"></script>
-    <script type="x-brace-template">
-      {{#rows}}
-      <div class="event">
-        <a href="{{url}}" class="event__link">
-          <div class="event__logo"><div><img src="http://googledrive.com/host/0B8q2MFMBD9mFNmtMWHV5VFdnTEU/{{id}}.png" alt="{{name}}"></div></div>
-          <div class="event__date">{{date}}</div>
-        </a>
-      </div>
-      {{/rows}}
-    </script>
-    {% endraw %}
+  <div class="events js-events">
   </div>
 </div>
 <div class="lo-block">
   <h1>Featured Blog Posts</h1>
-  <div class="links">
-    {% for link in site.data.links %}
-      <div class="link">
-        <div class="link__bullet"><div class="u-icon">{% include svg/icon-bullet.svg %}</div></div>
-        <div class="link__date">{{ link.date }}</div>
-        <div class="link__url"><a href="{{ link.url }}">{{ link.name }}</a></div>
-      </div>
-    {% endfor %}
+  <div class="links js-links">
   </div>
 </div>
 <div class="lo-block lo-block--webinars">
@@ -101,14 +81,7 @@ title: Upraise Consulting
       <div class="u-icon">{% include svg/icon-globe.svg %}</div>
     </div>
     <h1>Upcoming Webinar</h1>
-    {% for webinar in site.data.webinars %}
-      <div class="webinar">
-        <div class="webinar__content">Join Our Upcoming Webinar “{{ webinar.name }}” on {{ webinar.date }} at {{ webinar.time }}.</div>
-        <div class="webinar__action">
-          <a href="{{ webinar.url }}" class="button button--reverse">Sign Up Now</a>
-        </div>
-      </div>
-    {% endfor %}
+    <div class="webinars js-webinars"></div>
   </div>
 </div>
 <div class="lo-block" id="leadership">
