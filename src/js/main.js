@@ -56,7 +56,7 @@ function injectEvents(events) {
   $.each(events["rows"], function(i, val) {
     var eventHtml =  "<div class=\"event\">" +
         "<a href=\"" + val.url + "\" class=\"event__link\">" +
-          "<div class=\"event__logo\"><div><img src=\"http://googledrive.com/host/0B8q2MFMBD9mFNmtMWHV5VFdnTEU/" + val.id + ".png\" alt=\"" + val.name + "\"></div></div>" +
+          "<div class=\"event__logo\"><div><img src=\"http://googledrive.com/host/0B8q2MFMBD9mFNmtMWHV5VFdnTEU/" + val.image + "\" alt=\"" + val.name + "\"></div></div>" +
           "<div class=\"event__date\">" + val.date + "</div>" +
         "</a>" +
       "</div>";
