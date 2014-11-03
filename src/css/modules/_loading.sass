@@ -1,0 +1,35 @@
+.loading
+  text-align: center
+  font-size: 10px
+
+.loading__dot
+  width: 1em
+  height: 1em
+  background: $white
+  border-radius: 0.5em
+  margin-right: 0.5em
+  display: inline-block
+
+  &--first
+    animation: bounce 1s infinite
+    animation-delay: .1s
+    background: $blue
+
+    .loading--webinar &
+      background: $white
+
+  &--second
+    animation: bounce 1s infinite
+    animation-delay: .3s
+    background: $green
+
+  &--third
+    animation: bounce 1s infinite ease
+    animation-delay: .5s
+    background: $gray
+
+@keyframes bounce
+  0%, 100%
+    opacity: 1
+  60%
+    opacity: .0
