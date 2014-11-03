@@ -70,7 +70,7 @@ function injectEvents(events) {
 function injectLinks(links) {
   $.each(links["rows"], function(i, val) {
     var linkHtml = "<div class=\"link\">" +
-        "<div class=\"link__bullet\"><div class=\"u-icon\"><img src=\"/img/icon-bullet.svg\"></div></div>" +
+        "<div class=\"link__bullet\"><img src=\"/img/icon-bullet.svg\"></div>" +
         "<div class=\"link__date\">" + val.date + "</div>" +
         "<div class=\"link__url\"><a href=\"" + val.url + "\">" + val.name + "</a></div>" +
       "</div>";
