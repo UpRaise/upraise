@@ -25,19 +25,19 @@ $(document).ready(function(){
 
 
   // Data from Google Spreadsheets for Events
-  $.get("https://data.brace.io/ss/qnFX7xbpdFBQP6RUKkPJXS", function(data) {
+  $.get("https://gridspree.io/ss/LbE7cn9Xit8QWzYy42x4uK", function(data) {
     injectEvents(data);
     $(".js-events-loading").remove();
   });
 
   // Data from Google Spreadsheets for Blog Posts
-  $.get("https://data.brace.io/ss/bkcdrqo8YHAZZJ3p2QrKH5", function(data) {
+  $.get("https://gridspree.io/ss/CDkCYMfuGGWMR4xKXeuaSV", function(data) {
     injectLinks(data);
     $(".js-links-loading").remove();
   });
 
   // Data from Google Spreadsheets for Webinars
-  $.get("https://data.brace.io/ss/RgnfrRYbXN7fKmfU5FjMCb", function(data) {
+  $.get("https://gridspree.io/ss/8oc4QPUm5CecK3zZvJwBnZ", function(data) {
     injectWebinars(data);
     $(".js-webinars-loading").remove();
   });
