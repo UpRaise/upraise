@@ -36,10 +36,10 @@ $(document).ready(function(){
     $(".js-links-loading").remove();
   });
 
-  // Data from Google Spreadsheets for Webinars
-  $.get("https://gridspree.io/ss/8oc4QPUm5CecK3zZvJwBnZ", function(data) {
-    injectWebinars(data);
-    $(".js-webinars-loading").remove();
+  // Data from Google Spreadsheets for Highlight
+  $.get("https://gridspree.io/ss/nM4vtN2jMrTefZfLNkiqmh", function(data) {
+    injectHighlight(data);
+    $(".js-highlight-loading").remove();
   });
 
 });
@@ -78,14 +78,13 @@ function injectLinks(links) {
   });
 }
 
-function injectWebinars(webinars) {
-   $.each(webinars["rows"], function(i, val) {
-    var webinarHtml = "<div class=\"webinar\">" +
-        "<div class=\"webinar__content\">Join Our Upcoming Webinar “" + val.name + "” on " + val.date + " at " + val.time + ".</div>" +
-        "<div class=\"webinar__action\">" +
-          "<a href=\"" + val.url + "\" class=\"button button--reverse\">Sign Up Now</a>" +
-        "</div>" +
-      "</div>";
-    $(".js-webinars").append(webinarHtml);
+function injectHighlight(highlight) {
+   $.each(highlight["rows"], function(i, val) {
+    var highlightHtml = "<h1>" + val.title + "</h1>" +
+        "<div class=\"highlight__content\">" + val.content + "</div>" +
+        "<div class=\"highlight__action\">" +
+          "<a href=\"" + val.url + "\" class=\"button button--reverse\">" + val.label + "</a>" +
+        "</div>";
+    $(".js-highlight").append(highlightHtml);
   });
 }
