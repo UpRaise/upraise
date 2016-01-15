@@ -77,12 +77,14 @@ title: Upraise Consulting
 </div>
 <div class="lo-block">
   <h1>Featured Posts</h1>
-  <div class="links js-links">
-  </div>
-  <div class="js-links-loading loading">
-    <div class="loading__dot loading__dot--first"></div>
-    <div class="loading__dot loading__dot--second"></div>
-    <div class="loading__dot loading__dot--third"></div>
+  <div class="links">
+      {% for blog in site.data.blogs %}
+      <div class="link">
+        <div class="link__bullet"><img src="/img/icon-bullet.svg"></div>
+        <div class="link__date">{{ blog.date }}</div>
+        <div class="link__url"><a href="{{ blog.url }}">{{ blog.name }}</a></div>
+      </div>
+      {%  endfor %}
   </div>
 </div>
 <div class="lo-block lo-block--highlight">
