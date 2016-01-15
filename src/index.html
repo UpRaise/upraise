@@ -67,12 +67,17 @@ title: Upraise Consulting
 </div>
 <div class="lo-block" id="latest-work">
   <h1>Speaking Engagements</h1>
-  <div class="events js-events">
-  </div>
-  <div class="js-events-loading loading">
-    <div class="loading__dot loading__dot--first"></div>
-    <div class="loading__dot loading__dot--second"></div>
-    <div class="loading__dot loading__dot--third"></div>
+  <div class="events">
+  {% for event in site.data.events %}
+    <div class="event">
+      <a href="{{ event.url }}" class="event__link">
+        <div class="event__logo">
+          <div><img src="/img/events/{{ event.image }}" alt="{{ event.name }}"></div>
+        </div>
+        <div class="event__date">{{ event.date }}</div>
+      </a>
+    </div>
+  {% endfor %}
   </div>
 </div>
 <div class="lo-block">
@@ -84,22 +89,23 @@ title: Upraise Consulting
         <div class="link__date">{{ blog.date }}</div>
         <div class="link__url"><a href="{{ blog.url }}">{{ blog.name }}</a></div>
       </div>
-      {%  endfor %}
+      {% endfor %}
   </div>
 </div>
+{% for highlight in site.data.highlights limit 1 %}
 <div class="lo-block lo-block--highlight">
   <div class="highlight">
     <div class="highlight__icon">
       <div class="u-icon">{% include svg/icon-globe.svg %}</div>
     </div>
-    <div class="js-highlight"></div>
-    <div class="js-highlight-loading loading loading--highlight">
-      <div class="loading__dot loading__dot--first"></div>
-      <div class="loading__dot loading__dot--second"></div>
-      <div class="loading__dot loading__dot--third"></div>
+    <h1>{{ highlight.title }}</h1>
+    <div class="highlight__content"> {{ highlight.content }}</div>
+    <div class="highlight__action">
+      <a href="{{ highlight.url }}" class="button button--reverse">{{ highlight.label }}</a>
     </div>
   </div>
 </div>
+{% endfor %}
 <div class="lo-block" id="leadership">
   <h1>Leadership</h1>
   <div class="founders">
